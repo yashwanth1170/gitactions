@@ -7,11 +7,11 @@ jobs:
     name: yashwanth234
     runs-on: ubuntu-latest
     steps:
-      -name: checkout my code 
-      uses: actions/checkout@v2
+      - name: checkout my code 
+        uses: actions/checkout@v2
       
-      -name: Run super-linter
-      uses: github/super-linter@v3
-      env:
-       DEFAULT_BRANCH: main
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run super-linter
+        uses: github/super-linter@v3
+        env:
+         DEFAULT_BRANCH: main
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
