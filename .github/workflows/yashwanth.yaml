@@ -22,11 +22,11 @@ jobs:
         aws-secret-access-key: nxZKYa5Z5SYwVGL22IvqMkbsrxjuJvt4vcaWUz1L
         aws-region: eu-west-2
 
-    - name: Login to Amazon ECR
+    - name: Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
-    - name: Build, tag, and push image to Amazon ECR
+    - name: Amazon EC
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: delploymentakhilyamala
