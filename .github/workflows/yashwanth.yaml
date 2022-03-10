@@ -2,7 +2,8 @@ name: yashwanth
 
 on:
   push:
-    branches: [ master ]
+    branches: 
+       -main
 
 jobs:
 
